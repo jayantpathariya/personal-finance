@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
 
 const publicSans = localFont({
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.variable}  antialiased`}>{children}</body>
+      <body className={`${publicSans.variable} bg-beige-100 antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

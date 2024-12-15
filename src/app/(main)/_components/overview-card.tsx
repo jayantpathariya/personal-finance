@@ -11,9 +11,9 @@ type OverviewCardProps = {
 export const OverviewCard = ({ title, balance, active }: OverviewCardProps) => {
   return (
     <Card className={cn(active && "bg-grey-900 text-white")}>
-      <p className={cn("text-4 mb-4 text-grey-500", active && "text-white")}>
+      <h2 className={cn("text-4 mb-4 text-grey-500", active && "text-white")}>
         {title}
-      </p>
+      </h2>
       <span className="text-1">{formatCurrency(balance)}</span>
     </Card>
   );

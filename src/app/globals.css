@@ -22,7 +22,7 @@ body {
 }
 
 .text-3 {
-  @apply text-[16px] leading-normal;
+  @apply text-[16px] font-bold leading-normal;
 }
 
 .text-4 {

@@ -5,8 +5,7 @@ import "./globals.css";
 
 const publicSans = localFont({
   src: "./fonts/PublicSans-VariableFont_wght.ttf",
-  variable: "--font-public-sans",
-  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.variable} bg-beige-100 antialiased`}>
+      <body className={`${publicSans.className} bg-beige-100 antialiased`}>
         {children}
       </body>
     </html>

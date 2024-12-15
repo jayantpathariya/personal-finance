@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 
-import { CaretRight } from "@/components/icons/caret-right";
+import { CaretRightIcon } from "@/components/icons/caret-right-icon";
 
 import { cn } from "@/lib/utils";
 
@@ -38,7 +38,7 @@ export const Button = ({
     <button className={cn(buttonVariants({ variant, className }))} {...props}>
       {children}{" "}
       {variant === "tertiary" && (
-        <CaretRight className="ml-2 size-2.5 hover:text-gray-900" />
+        <CaretRightIcon className="ml-2 size-2.5 hover:text-gray-900" />
       )}
     </button>
   );

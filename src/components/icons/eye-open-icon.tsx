@@ -2,7 +2,7 @@ type IconProps = {
   color?: string;
 } & React.SVGProps<SVGSVGElement>;
 
-export const EyeOpen = (props: IconProps) => (
+export const EyeOpenIcon = (props: IconProps) => (
   <svg
     fill="none"
     height={10}

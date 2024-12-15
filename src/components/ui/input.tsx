@@ -1,8 +1,8 @@
 "use client";
 
-import { EyeClose } from "@/components/icons/eye-close";
-import { EyeOpen } from "@/components/icons/eye-open";
-import { Search } from "@/components/icons/search";
+import { EyeCloseIcon } from "@/components/icons/eye-close-icon";
+import { EyeOpenIcon } from "@/components/icons/eye-open-icon";
+import { SearchIcon } from "@/components/icons/search-icon";
 
 import { cn } from "@/lib/utils";
 
@@ -47,14 +47,14 @@ export const Input = ({
           {...props}
         />
         {search && (
-          <Search className="absolute right-3 top-3.5 text-gray-900" />
+          <SearchIcon className="absolute right-3 top-3.5 text-gray-900" />
         )}
         {secure && (
-          <button onClick={() => onSecureClick?.()}>
+          <button type="button" onClick={() => onSecureClick?.()}>
             {props.type === "password" ? (
-              <EyeClose className="absolute right-3 top-4 text-gray-900" />
+              <EyeCloseIcon className="absolute right-3 top-4 text-gray-900" />
             ) : (
-              <EyeOpen className="absolute right-3 top-4 text-gray-900" />
+              <EyeOpenIcon className="absolute right-3 top-4 text-gray-900" />
             )}
           </button>
         )}

@@ -2,7 +2,7 @@ type IconProps = {
   color?: string;
 } & React.SVGProps<SVGSVGElement>;
 
-export const LogoLarge = (props: IconProps) => (
+export const LogoLargeIcon = (props: IconProps) => (
   <svg
     fill="none"
     height={22}

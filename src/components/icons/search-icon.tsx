@@ -2,7 +2,7 @@ type IconProps = {
   color?: string;
 } & React.SVGProps<SVGSVGElement>;
 
-export const Search = (props: IconProps) => (
+export const SearchIcon = (props: IconProps) => (
   <svg
     fill="none"
     height={14}

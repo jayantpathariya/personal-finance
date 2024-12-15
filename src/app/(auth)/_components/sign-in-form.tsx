@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { LogoLarge } from "@/components/icons/logo-large";
+import { LogoLargeIcon } from "@/components/icons/logo-large-icon";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -16,7 +16,7 @@ export const SignInForm = () => {
           width={500}
           height={500}
         />
-        <LogoLarge className="absolute left-6 top-6 text-white" />
+        <LogoLargeIcon className="absolute left-6 top-6 text-white" />
         <div className="absolute bottom-6 left-6 space-y-2 text-white">
           <p className="text-1">
             Keep track of your money and save for your future

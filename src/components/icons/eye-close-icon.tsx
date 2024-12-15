@@ -2,7 +2,7 @@ type IconProps = {
   color?: string;
 } & React.SVGProps<SVGSVGElement>;
 
-export const EyeClose = (props: IconProps) => (
+export const EyeCloseIcon = (props: IconProps) => (
   <svg
     fill="none"
     height={12}

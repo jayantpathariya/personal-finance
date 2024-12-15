@@ -1,5 +1,6 @@
 import { OverviewCard } from "./_components/overview-card";
 import { Pots } from "./_components/pots";
+import { Transactions } from "./_components/transactions";
 
 const OverviewPage = () => {
   return (
@@ -11,6 +12,7 @@ const OverviewPage = () => {
         <OverviewCard title="Expense" balance={1700.5} />
       </div>
       <Pots />
+      <Transactions />
     </div>
   );
 };

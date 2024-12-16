@@ -1,6 +1,7 @@
 "use client";
 
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
+import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -36,11 +37,19 @@ const totalSpent = 338;
 const totalLimit = 975;
 
 export const Budgets = () => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/budgets");
+  };
+
   return (
     <Card className="mt-4">
       <div className="mb-5 flex items-center justify-between">
         <h2 className="text-2">Budgets</h2>
-        <Button variant="tertiary">See Details</Button>
+        <Button variant="tertiary" onClick={handleNavigate}>
+          See Details
+        </Button>
       </div>
       <div className="flex flex-col justify-between md:flex-row">
         <div className="relative w-full">

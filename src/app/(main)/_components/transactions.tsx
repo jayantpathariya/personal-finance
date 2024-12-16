@@ -1,3 +1,7 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 import { TransactionsTable } from "@/components/transactions-table";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -46,11 +50,19 @@ const transactions = [
 ];
 
 export const Transactions = () => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/transactions");
+  };
+
   return (
     <Card className="mt-4">
       <div className="mb-2 flex items-center justify-between pb-4">
         <h2 className="text-2">Transactions</h2>
-        <Button variant="tertiary">See Details</Button>
+        <Button variant="tertiary" onClick={handleNavigate}>
+          See Details
+        </Button>
       </div>
       <TransactionsTable transactions={transactions} />
     </Card>

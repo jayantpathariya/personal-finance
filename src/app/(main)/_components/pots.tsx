@@ -1,3 +1,7 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 import { PotIcon } from "@/components/icons/pot-icon";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -7,11 +11,19 @@ import { formatCurrency } from "@/lib/utils";
 import { CategoryCard } from "./category-card";
 
 export const Pots = () => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/pots");
+  };
+
   return (
     <Card className="mt-4">
       <div className="mb-5 flex items-center justify-between">
         <h2 className="text-2">Pots</h2>
-        <Button variant="tertiary">See Details</Button>
+        <Button variant="tertiary" onClick={handleNavigate}>
+          See Details
+        </Button>
       </div>
       <div className="flex flex-col gap-x-5 md:flex-row">
         <div className="flex w-full items-center gap-x-4 rounded-xl bg-beige-100 p-4">

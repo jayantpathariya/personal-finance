@@ -35,7 +35,7 @@ export const TransactionsTable = ({ transactions }: TableProps) => {
               />
               <span className="text-4-bold">{transaction.name}</span>
             </td>
-            <td className="flex flex-col items-end gap-y-2">
+            <td className="flex flex-col items-end gap-y-2.5">
               <span
                 className={cn(
                   "text-4-bold",

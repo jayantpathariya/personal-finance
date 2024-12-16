@@ -48,7 +48,7 @@ const transactions = [
 export const Transactions = () => {
   return (
     <Card className="mt-4">
-      <div className="mb-5 flex items-center justify-between">
+      <div className="mb-2 flex items-center justify-between pb-4">
         <h2 className="text-2">Transactions</h2>
         <Button variant="tertiary">See Details</Button>
       </div>
